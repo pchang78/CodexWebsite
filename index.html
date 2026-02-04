@@ -1,0 +1,370 @@
+<!--
+Project: Apex Consulting Group Demo Site
+File structure:
+project/
+  index.html
+  styles.css
+  script.js
+  manifest.json
+  assets/
+    readme.txt
+
+Placeholder images used:
+- https://via.placeholder.com/1200x800?text=Apex+Consulting+Hero
+- https://via.placeholder.com/800x600?text=Case+Study+1
+- https://via.placeholder.com/800x600?text=Case+Study+2
+- https://via.placeholder.com/800x600?text=Case+Study+3
+- https://via.placeholder.com/600x600?text=Team+Member+1
+- https://via.placeholder.com/600x600?text=Team+Member+2
+- https://via.placeholder.com/600x600?text=Team+Member+3
+- https://via.placeholder.com/512x512?text=Apex+Logo
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Apex Consulting Group delivers strategic, data-driven consulting for modern enterprises." />
+  <title>Apex Consulting Group | Strategy, Transformation, Results</title>
+  <meta property="og:title" content="Apex Consulting Group" />
+  <meta property="og:description" content="Strategy, transformation, and measurable results for growing organizations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Apex+Consulting+Group" />
+  <meta property="og:url" content="https://example.com" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://via.placeholder.com" />
+  <style>
+    :root {
+      color-scheme: light;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f8f9fb;
+      color: #1b1f24;
+    }
+    .hero {
+      padding: 6rem 1.5rem 4rem;
+      background: linear-gradient(120deg, rgba(11, 61, 145, 0.08), rgba(0, 168, 232, 0.08));
+    }
+    .hero__content {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-bar">
+      <a class="logo" href="#top" aria-label="Apex Consulting Group home">
+        <img src="https://via.placeholder.com/512x512?text=Apex+Logo" alt="Apex Consulting Group logo" loading="lazy" />
+        <span>Apex Consulting Group</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" aria-controls="primary-menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span aria-hidden="true" class="nav__bar"></span>
+          <span aria-hidden="true" class="nav__bar"></span>
+          <span aria-hidden="true" class="nav__bar"></span>
+        </button>
+        <ul class="nav__menu" id="primary-menu">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn--ghost" id="theme-toggle" type="button" aria-pressed="false">
+        Dark mode
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__content">
+        <div class="hero__text reveal">
+          <p class="eyebrow">Trusted strategic advisors</p>
+          <h1 id="hero-title">Transform ambition into measurable growth.</h1>
+          <p class="lead">
+            Apex Consulting Group partners with leadership teams to align strategy, streamline operations,
+            and build resilient, data-driven organizations.
+          </p>
+          <div class="hero__actions">
+            <a class="btn" href="#contact">Schedule a consultation</a>
+            <a class="btn btn--ghost" href="#services">Explore services</a>
+          </div>
+          <div class="hero__highlights">
+            <div>
+              <strong>25+</strong>
+              <span>Industries served</span>
+            </div>
+            <div>
+              <strong>98%</strong>
+              <span>Client retention</span>
+            </div>
+            <div>
+              <strong>$1.2B</strong>
+              <span>Value unlocked</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__media reveal">
+          <img
+            src="https://via.placeholder.com/1200x800?text=Apex+Consulting+Hero"
+            alt="Consultants collaborating in a modern boardroom"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 id="services-title">Services built for today&apos;s challenges</h2>
+          <p>From strategic planning to digital execution, our team delivers outcomes that compound.</p>
+        </div>
+        <div class="grid services-grid">
+          <article class="card reveal">
+            <h3>Strategic Growth Planning</h3>
+            <p>Market analysis, competitive positioning, and 12-month execution roadmaps.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Operational Excellence</h3>
+            <p>Process redesign, KPI frameworks, and cross-functional alignment to drive efficiency.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Digital Transformation</h3>
+            <p>Technology modernization, data governance, and scalable digital operating models.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Customer Experience</h3>
+            <p>Voice-of-customer research, journey mapping, and measurable retention initiatives.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Financial Advisory</h3>
+            <p>Profitability analysis, scenario modeling, and capital allocation strategy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="case-studies" aria-labelledby="case-title">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 id="case-title">Case studies</h2>
+          <p>Real impact across enterprise, mid-market, and high-growth teams.</p>
+        </div>
+        <div class="grid case-grid">
+          <article class="card card--image reveal">
+            <img src="https://via.placeholder.com/800x600?text=Case+Study+1" alt="Logistics dashboard on a laptop" loading="lazy" />
+            <div>
+              <h3>National Logistics Provider</h3>
+              <p>Reduced delivery cost per mile by 18% through network optimization and supplier renegotiation.</p>
+            </div>
+          </article>
+          <article class="card card--image reveal">
+            <img src="https://via.placeholder.com/800x600?text=Case+Study+2" alt="Team reviewing financial reports" loading="lazy" />
+            <div>
+              <h3>Regional Financial Services</h3>
+              <p>Accelerated digital onboarding from 12 days to 36 hours with secure workflow automation.</p>
+            </div>
+          </article>
+          <article class="card card--image reveal">
+            <img src="https://via.placeholder.com/800x600?text=Case+Study+3" alt="Healthcare professionals meeting" loading="lazy" />
+            <div>
+              <h3>Healthcare Network</h3>
+              <p>Improved patient satisfaction by 22 points after redesigning care pathways and staffing models.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="reveal">
+          <h2 id="about-title">About Apex Consulting Group</h2>
+          <p>
+            We are a senior team of strategists, operators, and technologists who help organizations
+            deliver value with confidence. Our engagements blend rigorous analysis with clear change
+            management so leadership teams can move fast and stay aligned.
+          </p>
+          <ul class="list-check">
+            <li>Industry-specific benchmarking and actionable playbooks.</li>
+            <li>Embedded change leaders to build internal capability.</li>
+            <li>Transparent governance with weekly executive dashboards.</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3>FAQ</h3>
+          <ul class="faq">
+            <li><strong>How fast can we start?</strong> Most discovery engagements begin within two weeks.</li>
+            <li><strong>Do you work with in-house teams?</strong> Yes, we co-deliver to transfer knowledge.</li>
+            <li><strong>What&apos;s the typical engagement length?</strong> 8–16 weeks for transformation sprints.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 id="team-title">Meet the leadership team</h2>
+          <p>Senior advisors with hands-on experience across strategy, finance, and technology.</p>
+        </div>
+        <div class="grid team-grid">
+          <article class="card card--center reveal">
+            <img src="https://via.placeholder.com/600x600?text=Team+Member+1" alt="Portrait of Maya Patel, Chief Strategy Officer" loading="lazy" />
+            <h3>Maya Patel</h3>
+            <p class="muted">Chief Strategy Officer</p>
+            <p>Maya specializes in enterprise growth strategy and new market entry planning.</p>
+          </article>
+          <article class="card card--center reveal">
+            <img src="https://via.placeholder.com/600x600?text=Team+Member+2" alt="Portrait of Luis Alvarez, Head of Operations" loading="lazy" />
+            <h3>Luis Alvarez</h3>
+            <p class="muted">Head of Operations</p>
+            <p>Luis leads operational transformations that unlock measurable efficiency gains.</p>
+          </article>
+          <article class="card card--center reveal">
+            <img src="https://via.placeholder.com/600x600?text=Team+Member+3" alt="Portrait of Emma Brooks, Director of Digital" loading="lazy" />
+            <h3>Emma Brooks</h3>
+            <p class="muted">Director of Digital</p>
+            <p>Emma guides technology modernization and data-driven customer experiences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 id="pricing-title">Engagements for every stage</h2>
+          <p>Choose a starting point tailored to your organization&apos;s goals.</p>
+        </div>
+        <div class="grid pricing-grid">
+          <article class="card reveal">
+            <h3>Insight Sprint</h3>
+            <p class="price">$12k</p>
+            <ul>
+              <li>2-week diagnostic</li>
+              <li>Executive briefing</li>
+              <li>Opportunity roadmap</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contact">Get started</a>
+          </article>
+          <article class="card card--highlight reveal">
+            <h3>Transformation Core</h3>
+            <p class="price">$40k</p>
+            <ul>
+              <li>12-week transformation plan</li>
+              <li>Embedded change lead</li>
+              <li>Weekly KPI reporting</li>
+            </ul>
+            <a class="btn" href="#contact">Book a consult</a>
+          </article>
+          <article class="card reveal">
+            <h3>Advisory Partner</h3>
+            <p class="price">Custom</p>
+            <ul>
+              <li>Ongoing leadership support</li>
+              <li>Quarterly strategy refresh</li>
+              <li>Executive coaching</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contact">Talk to us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <h2 id="contact-title">Let&apos;s build your next chapter</h2>
+          <p>Tell us about your goals and we&apos;ll follow up within one business day.</p>
+          <div class="contact-details">
+            <p><strong>Email:</strong> hello@apexconsultinggroup.com</p>
+            <p><strong>Phone:</strong> (555) 014-2024</p>
+            <p><strong>Location:</strong> New York, NY • Remote worldwide</p>
+          </div>
+        </div>
+        <form class="card form" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required autocomplete="name" />
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <div class="form-field">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <div class="form-field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" required autocomplete="organization" />
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <div class="form-field">
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <button class="btn" type="submit">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo logo--footer" href="#top">
+          <img src="https://via.placeholder.com/512x512?text=Apex+Logo" alt="Apex Consulting Group logo" loading="lazy" />
+          <span>Apex Consulting Group</span>
+        </a>
+        <p>Strategy, transformation, and measurable results.</p>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.twitter.com" target="_blank" rel="noreferrer">X / Twitter</a></li>
+          <li><a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Insights</h3>
+        <ul>
+          <li><a href="#services">Industry research</a></li>
+          <li><a href="#case-studies">Success stories</a></li>
+          <li><a href="#contact">Leadership briefings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Apex Consulting Group. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Apex Consulting Group",
+      "url": "https://example.com",
+      "logo": "https://via.placeholder.com/512x512?text=Apex+Logo",
+      "sameAs": [
+        "https://www.linkedin.com",
+        "https://www.twitter.com",
+        "https://www.youtube.com"
+      ]
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
