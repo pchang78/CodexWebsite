@@ -1,0 +1,20 @@
+{
+  "name": "Apex Consulting Group",
+  "short_name": "Apex Consulting",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b3d91",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192?text=Apex+Logo",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512?text=Apex+Logo",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
